@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Pharmacie de l'abbaye - Arras</title>
+	<meta name="description" content="Pharmacie de l'abbaye 24 rue M&eacute;aulens 62000 Arras.">
+	<meta name="keywords" content="pharmacie, abbaye, arras, meaulens, bosquet, garde">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="matth">
+	<link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
+	<link rel="Stylesheet" type="text/css" href="main.css">
+	<link rel="Stylesheet" href="css/lightbox.css" type="text/css" media="screen">
+	<script type="text/javascript" src="js/prototype.js"></script>
+	<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAa30AmidWwD-a7ebNzXjhoBRiZ0DqMN_LUZoSmaOQZtImo_yPvhTkV58IwNpd_AoncG3L1bjK_aFa0A"
+	      type="text/javascript"></script>
+	    <script type="text/javascript">
+
+	    //<![CDATA[
+
+	    function load() {
+	      if (GBrowserIsCompatible()) {
+	        var map = new GMap2(document.getElementById("map"));
+			var marker = new GMarker(new GLatLng(50.293623, 2.775003));
+			var html="Pharmacie de l'abbaye<br/>" +
+			         "24 rue M&eacute;aulens<br/>"+
+					 "62000 Arras";
+	        map.setCenter(new GLatLng(50.293623, 2.775003), 15);
+			map.addOverlay(marker);
+			marker.openInfoWindowHtml(html);
+			map.addControl(new GLargeMapControl());
+			map.addControl(new GScaleControl());
+	      }
+	    }
+	    </script>
+</head>
+<body onload="load()" onunload="GUnload()">
+<div id="container">
+
+	<div id="title">
+	<div id="flot">
+	<h1>Pharmacie de l'abbaye</h1>
+	<h2>Maxime Bosquet, Docteur en pharmacie</h2>
+	</div>
+	<img src="logo.png" alt="enseigne de la pharmacie">
+	</div>
+	<div id="box">
+		<a href="pharmacie.jpg" rel="lightbox[pharmacie]" title="pharmacie de l'abbaye &agrave; arras"><img src="pharmaciemini.png" alt="pharmacie de l'abbaye" class="floter"></a>
+	<p class="par1">
+		Bienvenue sur le site de la pharmacie de l'abbaye rue M&eacute;aulens &agrave; Arras.
+	</p>
+	<div id="clear">
+	<p class="par">
+		Mat&eacute;riel m&eacute;dical pour soins &agrave; domicile, bas de contention : Varisma, Sigvaris, nombreux mod&egrave;les de cannes technique ou fantaisie; Produits v&eacute;t&eacute;rinaires; Herboristerie; Hom&eacute;opathie; Cosm&eacute;tologie; Produits Av&egrave;ne; Gamme Argan Bio; Gamme b&eacute;b&eacute; : Picot, Mustela. 
+	</p>
+	</div>
+	<h2 class="margin">Adresse, t&eacute;l&eacute;phone</h2>
+	<div id="address">
+	<p>Pharmacie de l'abbaye<br>24 rue M&eacute;aulens<br>62000 Arras</p>
+	<p>03 21 23 11 65</p>
+	</div>
+	<p class="stmap"><b>Plan</b> (la pharmacie se trouve face &agrave; la cath&eacute;drale)</p>
+	<div id="map" style="width: 520px; height: 300px"></div>
+	<h2 class="margin">Horaires d'ouverture</h2>
+	
+	<table class="horaires" cellspacing="0" summary="horaires d'ouverture">
+	<tr>
+	<td class="hole"></td>
+	<td class="horairesdp">Matin</td>
+	<td class="horairesdp">Apr&egrave;s midi</td>
+	</tr>
+	<tr>
+	<td class="horaireg">Lundi</td>
+	<td class="horairef">ferm&eacute;</td>
+	<td class="horaire">14h - 19h</td>
+	</tr>
+	<tr>
+	<td class="horaireg">Mardi - Vendredi</td>
+	<td class="horaire">9h - 12h</td>
+	<td class="horaire">14h - 19h</td>
+	</tr>
+	<tr>
+	<td class="horaireg">Samedi</td>
+	<td class="horaire">9h - 12h</td>
+	<td class="horaire">14h - 18h</td>
+	</tr>
+	</table>
+
+	<h2 class="margin">Les pharmacies de garde &agrave; Arras</h2>
+	<p class="par">
+		Pour trouver la pharmacie de garde la plus proche de chez vous appelez le 0825 74 20 30 (0.15€ la minute) ou sur internet, <a href="http://www.servigarde.fr/" title="pharmacie de garde">http://www.servigarde.fr/</a>.
+	</p>
+	<div id="imgs">
+		<a href="produits1.jpg" rel="lightbox[pharmacie]" title="produits pour b&eacute;b&eacute;, picot, mustela"><img src="produits1mini.jpg" alt="produits pour b&eacute;b&eacute;, picot, mustela"></a>
+		<a href="produits2.jpg" rel="lightbox[pharmacie]" title="Cosm&eacute;tologie, produits av&egrave;ne, Roc, gamme Argan Bio"><img src="produits2mini.jpg" alt="Cosm&eacute;tologie, produits av&egrave;ne, Roc, gamme Argan Bio"></a>
+		<a href="service.jpg" rel="lightbox[pharmacie]" title="N'h&eacute;sitez pas &agrave; demander conseil &agrave; votre pharmacien"><img src="servicemini.jpg" alt="N'h&eacute;sitez pas &agrave; demander conseil &agrave; votre pharmacien"></a>
+	</div>
+	</div>
+	<p class="legal">
+		<a href="http://neiges.fr" title="neiges cr&eacute;ation">Site r&eacute;alis&eacute; par neiges.fr &copy; 2008</a> | <a href="legal.html" title="mentions l&eacute;gales">legal</a>
+	</p>
+</div>
+</body>
+</html>
