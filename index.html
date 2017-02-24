@@ -1,107 +1,127 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-
+<!doctype html>
 <html lang="fr">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Pharmacie de l'abbaye - Arras</title>
-	<meta name="description" content="Pharmacie de l'abbaye 24 rue M&eacute;aulens 62000 Arras.">
-	<meta name="keywords" content="pharmacie, abbaye, arras, meaulens, bosquet, garde">
-	<meta name="robots" content="index, follow">
-	<meta name="author" content="matth">
-	<link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
-	<link rel="Stylesheet" type="text/css" href="main.css">
-	<link rel="Stylesheet" href="css/lightbox.css" type="text/css" media="screen">
-	<script type="text/javascript" src="js/prototype.js"></script>
-	<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
-	<script type="text/javascript" src="js/lightbox.js"></script>
-	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAa30AmidWwD-a7ebNzXjhoBRiZ0DqMN_LUZoSmaOQZtImo_yPvhTkV58IwNpd_AoncG3L1bjK_aFa0A"
-	      type="text/javascript"></script>
-	    <script type="text/javascript">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#4d934f">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" media="screen" href="/css/pharmacie-abbaye.css" />
 
-	    //<![CDATA[
+    <meta name="description" content="Pharmacie de l'abbaye 24 rue M&eacute;aulens 62000 Arras.">
+    <meta name="keywords" content="pharmacie, abbaye, arras, meaulens, bosquet, garde">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Matthieu Bosquet">
 
-	    function load() {
-	      if (GBrowserIsCompatible()) {
-	        var map = new GMap2(document.getElementById("map"));
-			var marker = new GMarker(new GLatLng(50.293623, 2.775003));
-			var html="Pharmacie de l'abbaye<br/>" +
-			         "24 rue M&eacute;aulens<br/>"+
-					 "62000 Arras";
-	        map.setCenter(new GLatLng(50.293623, 2.775003), 15);
-			map.addOverlay(marker);
-			marker.openInfoWindowHtml(html);
-			map.addControl(new GLargeMapControl());
-			map.addControl(new GScaleControl());
-	      }
-	    }
-	    </script>
+    <title>Pharmacie de l'abbaye à Arras</title>
 </head>
-<body onload="load()" onunload="GUnload()">
-<div id="container">
 
-	<div id="title">
-	<div id="flot">
-	<h1>Pharmacie de l'abbaye</h1>
-	<h2>Maxime Bosquet, Docteur en pharmacie</h2>
-	</div>
-	<img src="logo.png" alt="enseigne de la pharmacie">
-	</div>
-	<div id="box">
-		<a href="pharmacie.jpg" rel="lightbox[pharmacie]" title="pharmacie de l'abbaye &agrave; arras"><img src="pharmaciemini.png" alt="pharmacie de l'abbaye" class="floter"></a>
-	<p class="par1">
-		Bienvenue sur le site de la pharmacie de l'abbaye rue M&eacute;aulens &agrave; Arras.
-	</p>
-	<div id="clear">
-	<p class="par">
-		Mat&eacute;riel m&eacute;dical pour soins &agrave; domicile, bas de contention : Varisma, Sigvaris, nombreux mod&egrave;les de cannes technique ou fantaisie; Produits v&eacute;t&eacute;rinaires; Herboristerie; Hom&eacute;opathie; Cosm&eacute;tologie; Produits Av&egrave;ne; Gamme Argan Bio; Gamme b&eacute;b&eacute; : Picot, Mustela. 
-	</p>
-	</div>
-	<h2 class="margin">Adresse, t&eacute;l&eacute;phone</h2>
-	<div id="address">
-	<p>Pharmacie de l'abbaye<br>24 rue M&eacute;aulens<br>62000 Arras</p>
-	<p>03 21 23 11 65</p>
-	</div>
-	<p class="stmap"><b>Plan</b> (la pharmacie se trouve face &agrave; la cath&eacute;drale)</p>
-	<div id="map" style="width: 520px; height: 300px"></div>
-	<h2 class="margin">Horaires d'ouverture</h2>
-	
-	<table class="horaires" cellspacing="0" summary="horaires d'ouverture">
-	<tr>
-	<td class="hole"></td>
-	<td class="horairesdp">Matin</td>
-	<td class="horairesdp">Apr&egrave;s midi</td>
-	</tr>
-	<tr>
-	<td class="horaireg">Lundi</td>
-	<td class="horairef">ferm&eacute;</td>
-	<td class="horaire">14h - 19h</td>
-	</tr>
-	<tr>
-	<td class="horaireg">Mardi - Vendredi</td>
-	<td class="horaire">9h - 12h</td>
-	<td class="horaire">14h - 19h</td>
-	</tr>
-	<tr>
-	<td class="horaireg">Samedi</td>
-	<td class="horaire">9h - 12h</td>
-	<td class="horaire">14h - 18h</td>
-	</tr>
-	</table>
+<body>
+    <div class="container">
 
-	<h2 class="margin">Les pharmacies de garde &agrave; Arras</h2>
-	<p class="par">
-		Pour trouver la pharmacie de garde la plus proche de chez vous appelez le 0825 74 20 30 (0.15€ la minute) ou sur internet, <a href="http://www.servigarde.fr/" title="pharmacie de garde">http://www.servigarde.fr/</a>.
-	</p>
-	<div id="imgs">
-		<a href="produits1.jpg" rel="lightbox[pharmacie]" title="produits pour b&eacute;b&eacute;, picot, mustela"><img src="produits1mini.jpg" alt="produits pour b&eacute;b&eacute;, picot, mustela"></a>
-		<a href="produits2.jpg" rel="lightbox[pharmacie]" title="Cosm&eacute;tologie, produits av&egrave;ne, Roc, gamme Argan Bio"><img src="produits2mini.jpg" alt="Cosm&eacute;tologie, produits av&egrave;ne, Roc, gamme Argan Bio"></a>
-		<a href="service.jpg" rel="lightbox[pharmacie]" title="N'h&eacute;sitez pas &agrave; demander conseil &agrave; votre pharmacien"><img src="servicemini.jpg" alt="N'h&eacute;sitez pas &agrave; demander conseil &agrave; votre pharmacien"></a>
-	</div>
-	</div>
-	<p class="legal">
-		<a href="http://neiges.fr" title="neiges cr&eacute;ation">Site r&eacute;alis&eacute; par neiges.fr &copy; 2008</a> | <a href="legal.html" title="mentions l&eacute;gales">legal</a>
-	</p>
-</div>
+        <div class="header clear">
+            <img src="/images/logo.png" alt="Enseigne de la pharmacie">
+            <h1>Pharmacie de l'abbaye</h1>
+            <h2>Maxime Bosquet, Docteur en pharmacie</h2>
+        </div>
+
+        <div class="box">
+            <div class="clear">
+                <div class="float-left">
+                    <a href="/images/pharmacie.jpg" title="Pharmacie de l'abbaye, Arras">
+                        <img src="/images/pharmacie-mini.png" alt="Devanture de la pharmacie de l'abbaye dans la rue Méaulens">
+                    </a>
+                </div>
+                <p class="double-margin float-left">
+                    Bienvenue sur le site de la pharmacie de l'abbaye.<br>
+                    Vous pouvez nous trouver rue Méaulens en face de<br>
+                    la cathédrale d'Arras.
+                </p>
+            </div>
+            <p class="clear">
+                Nous proposons: Matériel médical pour soins à domicile; Bas de contention: Varisma, Sigvaris; Nombreux modèles
+                de cannes technique ou fantaisie; Produits vétérinaires; Herboristerie; Homéopathie;
+                Cosmétologie; Produits Avène; Gamme Argan Bio; Gamme bébé: Picot, Mustela.
+            </p>
+
+            <h2>Adresse, téléphone</h2>
+            <div class="address">
+                <p>Pharmacie de l'abbaye<br>24 rue M&eacute;aulens<br>62000 Arras</p>
+                <p>03 21 23 11 65</p>
+            </div>
+            <div class="map" style="width: 520px; height: 300px"></div>
+
+            <h2>Horaires d'ouverture</h2>
+            <table class="horaires">
+                <tr>
+                    <td class="hole"></td>
+                    <td class="horairesdp">Matin</td>
+                    <td class="horairesdp">Après midi</td>
+                </tr>
+                <tr>
+                    <td class="horaireg">Lundi</td>
+                    <td class="horairef">fermé</td>
+                    <td class="horaire">14h - 19h</td>
+                </tr>
+                <tr>
+                    <td class="horaireg">Mardi - Vendredi</td>
+                    <td class="horaire">9h - 12h</td>
+                    <td class="horaire">14h - 19h</td>
+                </tr>
+                <tr>
+                    <td class="horaireg">Samedi</td>
+                    <td class="horaire">9h - 12h</td>
+                    <td class="horaire">14h - 18h</td>
+                </tr>
+            </table>
+
+            <h2>Les pharmacies de garde à Arras</h2>
+            <p>
+                Pour trouver la pharmacie de garde la plus proche de chez vous appelez le 0825 74 20 30 (0.15€ la minute) ou sur internet,
+                <a href="http://www.servigarde.fr/" title="pharmacie de garde">http://www.servigarde.fr/</a>.
+            </p>
+            <div class="images">
+                <a href="/images/produits1.jpg" title="Produits pour bébé, Picot, Mustela">
+                    <img src="/images/produits1-mini.jpg" alt="Rayon des produits pour bébé, Picot, Mustela">
+                </a>
+                <a href="/images/produits2.jpg" title="Cosmétologie, produits Avène, Roc, gamme Argan Bio">
+                    <img src="/images/produits2-mini.jpg" alt="Rayonage de produits de Cosmétologie, produits Avène, Roc, gamme Argan Bio">
+                </a>
+                <a href="/images/service.jpg" title="N'hésitez pas à demander conseil à votre pharmacien">
+                    <img src="/images/service-mini.jpg" alt="Pharmacien et assistante de pharmacie servent au comptoir">
+                </a>
+            </div>
+        </div>
+        <p class="legal">
+            Copyright &copy; 2017 Pharmacie de l'abbaye. <a href="/mentions-legales.html" title="Mentions légales">Mentions légales</a>
+        </p>
+    </div>
+    <script>
+        function initMap() {
+            var pharmacieCoordinates = new google.maps.LatLng(50.293623, 2.775003);
+            var mapCenterCoordinates = new google.maps.LatLng(50.294423, 2.775003);
+
+            var map = new google.maps.Map(document.getElementsByClassName('map')[0], {
+                zoom: 16,
+                center: mapCenterCoordinates
+            });
+            var marker = new google.maps.Marker({
+                position: pharmacieCoordinates,
+                map: map
+            });
+            var markerInfo = new google.maps.InfoWindow({
+                content: "<h4>Pharmacie de l'abbaye</h4><p>24 rue Méaulens, 62000 Arras</p>"
+            });
+            markerInfo.open(map, marker);
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbyzJ59F_fUh8UUTzu6xfG8HP4Tr-T-PQ&callback=initMap" type="text/javascript"></script>
 </body>
+
 </html>
