@@ -12,7 +12,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" media="screen" href="/css/pharmacie-abbaye.css" />
+    <link rel="stylesheet" media="screen" href="/css/pharmacie-abbaye.min.css" />
 
     <meta name="description" content="Pharmacie de l'abbaye 24 rue M&eacute;aulens 62000 Arras.">
     <meta name="keywords" content="pharmacie, abbaye, arras, meaulens, bosquet, garde">
@@ -55,30 +55,34 @@
                 <p>Pharmacie de l'abbaye<br>24 rue M&eacute;aulens<br>62000 Arras</p>
                 <p>03 21 23 11 65</p>
             </div>
-            <div class="map" style="width: 520px; height: 300px"></div>
+            <div class="map"></div>
 
             <h2>Horaires d'ouverture</h2>
             <table class="horaires">
-                <tr>
-                    <td class="hole"></td>
-                    <td class="horairesdp">Matin</td>
-                    <td class="horairesdp">Après midi</td>
-                </tr>
-                <tr>
-                    <td class="horaireg">Lundi</td>
-                    <td class="horairef">fermé</td>
-                    <td class="horaire">14h - 19h</td>
-                </tr>
-                <tr>
-                    <td class="horaireg">Mardi - Vendredi</td>
-                    <td class="horaire">9h - 12h</td>
-                    <td class="horaire">14h - 19h</td>
-                </tr>
-                <tr>
-                    <td class="horaireg">Samedi</td>
-                    <td class="horaire">9h - 12h</td>
-                    <td class="horaire">14h - 18h</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th>Matin</th>
+                        <th>Après midi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Lundi</th>
+                        <td class="closed">fermé</td>
+                        <td>14h - 19h</td>
+                    </tr>
+                    <tr>
+                        <th>Mardi - Vendredi</th>
+                        <td>9h - 12h</td>
+                        <td>14h - 19h</td>
+                    </tr>
+                    <tr>
+                        <th>Samedi</th>
+                        <td>9h - 12h</td>
+                        <td>14h - 18h</td>
+                    </tr>
+                </tbody>
             </table>
 
             <h2>Les pharmacies de garde à Arras</h2>

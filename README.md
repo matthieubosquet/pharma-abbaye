@@ -1,3 +1,3 @@
-# JS Base
+# Simple website
 
-A set of useful functions.
+Just a one page standard website.

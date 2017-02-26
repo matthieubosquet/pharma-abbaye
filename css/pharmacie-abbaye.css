@@ -59,8 +59,11 @@ a {
 }
 
 .map {
-	margin: 16px 0 16px 212px;
+    height: 300px;
+	margin: 16px 0;
+    max-width: 520px;
 	text-align: center;
+    width: 100%;
 }
 
 .map h4 {
@@ -73,79 +76,55 @@ a {
 }
 
 .address {
-	position: absolute;
-	margin-top: 106px;
+    float: left;
 	width: 212px;
 	text-align: center;
 }
 
 .horaires {
     background-color: #fafafa;
-    border: 1px #000000 solid;
+    border: 1px #000 solid;
     border-collapse: collapse;
     border-spacing: 0px;
-    margin: 16px auto;
-    width: 580px;
-}
-
-td.hole {
-	border-top-style: hidden;
-	border-left-style: hidden;
-	border-bottom: 1px #000000 solid;
-	background-color: #ffffff;
-	width: 40%;
-}
-
-td.horairesdp {
-    background-color: #99CCCC;
-    border: 1px #000000 solid;
-    text-align: center;
-    font-family: Verdana;
-    font-weight: bold;
     color: #404040;
+    margin: 16px auto;
+    max-width: 580px;
+    text-align: center;
+    width: 100%;
+}
+
+.horaires thead {
+    border-bottom: 1px #000 solid;
+}
+
+.horaires thead th {
+    background-color: #9CC;
+    border: 1px #000 solid;
+    font-weight: bold;
     width: 30%;
 }
 
-
-td.horaire {
-    border-bottom: 1px #6699CC dotted;
-    text-align: center;
-    font-family: Verdana, sans-serif, Arial;
-    font-weight: normal;
-    color: #404040;
-    background-color: #fafafa;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-right: 0px;
+.horaires thead td {
+	background-color: #fff;
+	border-top-style: hidden;
+	border-left-style: hidden;
+	width: 40%;
 }
 
-td.horairef {
-    border-bottom: 1px #6699CC dotted;
-    text-align: center;
-    font-family: Verdana, sans-serif, Arial;
-    font-weight: lighter;
-    font-style: italic;
-    color: #404040;
-    background-color: #fafafa;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-right: 0px;
-}
-
-td.horaireg {
+.horaires tbody th {
     border-bottom: 1px #6699CC dotted;
     border-right: 1px #000000 solid;
-    text-align: left;
-    font-family: Verdana, sans-serif, Arial;
     font-weight: normal;
-    color: #404040;
-    background-color: #fafafa;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-right: 0px;
+    padding: 4px 8px;
+    text-align: left;
+}
+
+.horaires tbody td {
+    border-bottom: 1px #6699CC dotted;
+}
+
+.horaires .closed {
+    font-style: italic;
 }
 
 .images {
@@ -186,4 +165,10 @@ td.horaireg {
     content: "";
     display: block;
     clear: both;
+}
+
+@media (min-width: 781px) {
+    .address {
+        margin-top: 64px;
+    }
 }
