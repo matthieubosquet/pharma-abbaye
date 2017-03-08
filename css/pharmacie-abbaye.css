@@ -77,7 +77,7 @@ a {
 
 .address {
     float: left;
-	width: 212px;
+	width: 224px;
 	text-align: center;
 }
 
@@ -159,6 +159,10 @@ a {
 
 .double-margin {
     margin-top: 32px;
+}
+
+.small-image {
+    width: 208px;
 }
 
 .clear:after {
